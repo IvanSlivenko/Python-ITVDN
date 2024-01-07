@@ -52,15 +52,38 @@
 #     print(f'Користувача {user_name} не знайдено у списку користувачів ')
 
 # ---------------------------------------------------------------------------------- len
-user_name = input('Введіть логін \n')
-user_name_len = len(user_name)
-if user_name_len <= 10:
-    print(f'Welcome {user_name}')
-else:
-    print('Ви ввели ім\'я що більше 10 символів',)
+# user_name = input('Введіть логін \n')
+# user_name_len = len(user_name)
+# if user_name_len <= 10:
+#     print(f'Welcome {user_name}')
+# else:
+#     print('Ви ввели ім\'я що більше 10 символів',)
 
 
 #-------------------------------------------------Тернарні оператори
+# a = 1
+# b = 2
+#
+# # if a > b:
+# #     result = a
+# # else:
+# #     result = b
+# # print('result', result)
+#
+# result = a if a > b else b # --------------------тернарний оператор
+# print('result', result)
+
+books = 2
+if books >1:
+    print('You have', books, 'books')
+else:
+    print('You have', books, 'book')
+# -------------------------------------- використаємо скорочений запис
+print('You have', books, ('books' if books > 1 else 'book'))
+
+
+
+
 
 
 
