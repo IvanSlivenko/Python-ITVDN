@@ -150,6 +150,39 @@ new_dict = empty_dictionary.fromkeys(days_name_list, '24')
 print(new_dict)
 print('------------------------------------------------')
 
+#-------------------- Скільки разів Ім'я зустрічається у списку --- Варіант 1
+classmates_name = ['Sergiy', 'Igor', 'Tanya', 'Sergiy', 'Lena']
+print('classmates_name', classmates_name)
+answer = {}
+for i in classmates_name:
+    print(i)
+    if i in answer.keys():
+        answer[i] += 1
+    else:
+        answer[i] = 1
+print('answer', answer)
+print('---------------------------------------------------')
+#-------------------- Скільки разів Ім'я зустрічається у списку --- Варіант 2
+answerTwo = {}
+for i in classmates_name:
+    answerTwo[i] = classmates_name.count(i)#-------------------- count()
+print('answerTwo', answerTwo)
+print('--------------------------------------------------')
+
+#-------------------- пройтися за словником та виявити всі значення, що мають парний ключ
+data_dict = {1 :'one', 33 : 'any text', 3 : 3, 5 : 5, 6 : 'x', 9: 'end'}
+print('data_dict', data_dict)
+print('значення, у яких ключі - парні')
+for el in data_dict:
+    if el % 2 == 0:
+        print(data_dict[el])
+print('----------------------------------------------------------------')
+
+
+
+
+
+
 
 
 
