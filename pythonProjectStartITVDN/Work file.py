@@ -76,6 +76,100 @@ print(some_set_four)
 some_set_four.add('w')
 print(some_set_four)
 print('---------------------------------------------')
-#-------------------------------------------------
+#------------------------------------------------- Поєднання множин union()
+print(some_set_four)
+some_set_seven = set('antarktyda')
+print(some_set_seven)
+some_set_eight = some_set_four.union(some_set_seven)
+print('some_set_eight', some_set_eight)
+#------------------------------------------------------ або  Поєднання множин |
+some_set_ten = some_set_four | some_set_seven
+print('some_set_ten' , some_set_ten)
+# ------------------------------------------------------або  Поєднання множин |=
+some_set_ten |= some_set_seven
+print('some_set_ten', some_set_ten)
+
+print('-----------------------------------------------------------------------')
+
+#-------------------------------------------------- Перетин множин intersection()
+print('some_set_seven', some_set_seven)
+print('some_set_eight', some_set_eight)
+some_set_nine = some_set_eight.intersection(some_set_seven)
+
+print('some_set_nine', some_set_nine)
+print('------------------------------------------------------------------------')
+#-------------------------------------------------- або Перетин множин   &
+some_set_twelve = some_set_eight & some_set_seven
+print('some_set_twelve', some_set_twelve)
+#--------------------------------------------------Різниця між множинами difference()
+print('some_set_seven', some_set_seven)
+print('some_set_twelve', some_set_twelve)
+some_set_thirteen = some_set_twelve.difference(some_set_seven)
+print('some_set_thirteen', some_set_thirteen)
+print('-------------------------------------------')
+#----------------------------------------------------- isdisjoint()
+print('some_set_twelve', some_set_twelve)
+print('some_set_seven', some_set_seven)
+print(some_set_twelve.isdisjoint(some_set_six))
+print('--------------------------------------------')
+#------------------------------------------------------ issubset()
+print('some_set_twelve', some_set_twelve)
+print('some_set_seven', some_set_seven)
+print(some_set_twelve.issubset(some_set_seven))
+# print(some_set_twelve <= (some_set_seven))
+print('--------------------------------------------')
+#----------------------------------------------------- Створення нової множини, що є симетричною
+#----------------------------------------------------- до різниці між множинами symmetric_difference()
+some_set_15 = {1, 2, 3}
+some_set_16 = {1, 2, 3, 4}
+print('some_set_15', some_set_15)
+print('some_set_16', some_set_16)
+some_set_17 = some_set_15.symmetric_difference(some_set_16)
+#----------------------------------------------------- або ^ (робота тільки з множинами)
+print('some_set_17', some_set_17)
+some_set_18 = some_set_15 ^ some_set_16
+print('some_set_18', some_set_18)
+print('---------------------------------------------')
+#----------------------------------------------------- Кортежі
+some_tuple = (1, 2, 3)
+print('some_tuple', some_tuple)
+print('----------------------------------------------')
+some_tuple_1 = ([], {}, set(), ())
+print('some_tuple_1', some_tuple_1)
+print('----------------------------------------------')
+
+#------------------------------------------------------- Створення кортежів tuple()
+some_tuple_3 = tuple(['a', 'b', 'c'])
+print('some_tuple_3', some_tuple_3)
+print('----------------------------------------------')
+some_tuple_4 = tuple('internet')
+print('some_tuple_4', some_tuple_4)
+# ---------------------------------------------------- Методи кортежів
+#------------------------------------------------------------------------------------ len()
+print(len(some_tuple_4))
+print('----------------------------------------------')
+#--------------------------------------------------------------перевіряємо  наявність стрічки у кортежі
+print('n' in some_tuple_4)
+print('----------------------------------------------')
+#------------------------------------------------------------рахуємо скільки разів зустрічається
+#------------------------------------------------------------------------------ елемент у кортежі------count()
+print(some_tuple_4.count('n'))
+#------------------------------------------------------------отримуємо індекс потрібного елементу index()
+print('----------------------------------------------')
+print(some_tuple_4.index('r'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
